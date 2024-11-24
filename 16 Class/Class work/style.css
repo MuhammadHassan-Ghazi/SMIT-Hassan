@@ -22,7 +22,7 @@
     /*will show listing numbers or bullets inside list (By default outside)*/
     list-style-position: inside; 
     /*Listing type*/
-    list-style-type: lower-roman;
+    list-style-type:decimal-leading-zero;
 }
 
 .orderList > li{
@@ -42,16 +42,18 @@
     /*Work same as padding for table*/
     border-spacing: 20px;
     empty-cells: hide;
+    /*border-collapse property will be restrict border-spacing*/
     border-collapse: collapse;
 }
 
-.myTable td{
+/* .myTable td{
     border: 1px solid red;
     padding: 10px;
-} 
+}  */
 
 .tableParent{
     padding: 0 20px;
+    /* border: 1px solid red; */
 }
 
 .myTable td{
@@ -82,11 +84,14 @@
 }
 
 .heading2{
+    /*Position relative (from its original postition)*/
     /* position: relative;
     left: 30px;
-    top: 10px; */
+    top: 30px; */
 
     background-color: red;
+    /*Position absolute (from body and it release its origninal place and other container
+    will take its original position)*/
     position: absolute;
     top: 50px;
     right: 30px;
@@ -104,11 +109,18 @@
     /* left:  px; */
 }
 
+
+.iconParent{
+    border: 1px solid red;
+    position: relative;
+    height: 100px;
+}
+
 .icon{
     background-color: red;
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -117,9 +129,4 @@
     top: 0;
     right: 0;
     cursor: pointer;
-}
-
-.iconParent{
-    border: 1px solid red;
-    position: relative;
 }
