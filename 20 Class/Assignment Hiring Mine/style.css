@@ -17,6 +17,10 @@
     background-clip: text;
 }
 
+.bodypart1 > h1 >span{
+   display: block;
+}
+
 .bodypart1 > p{
     width: 60%;
     margin: 10px auto;
